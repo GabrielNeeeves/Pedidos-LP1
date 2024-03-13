@@ -44,6 +44,7 @@ public class Main {
                     listaNome += "Self-Service - ";
                     System.out.println("Self-Service adicionado.");
                     System.out.println("O valor unitário é: R$ "+precoSelfService);
+                    System.out.println("O valor total é: R$ "+precoLista);
                     break;
                 case 2:
                 //Prato Feito
@@ -56,6 +57,7 @@ public class Main {
                     listaNome += "Prato feito - ";
                     System.out.println("Prato Feito adicionado.");
                     System.out.println("O valor unitário é: R$ "+precoPratoFeito);
+                    System.out.println("O valor total é: R$ "+precoLista);
                     break;
                 case 3:
                 //Bebida
@@ -68,6 +70,7 @@ public class Main {
                     listaNome += "Bebida - ";
                     System.out.println("Bebida lata adicionado.");
                     System.out.println("O valor unitário é: R$ "+precoBebida);
+                    System.out.println("O valor total é: R$ "+precoLista);
                     break;
                 case 4:
                 //Agua
@@ -80,6 +83,7 @@ public class Main {
                     listaNome += "Água - ";
                     System.out.println("Água adicionado.");
                     System.out.println("O valor unitário é: R$ "+precoAgua);
+                    System.out.println("O valor total é: R$ "+precoLista);
                     break;
                 case 5:
                     System.out.println("Quantidade: ");
@@ -91,6 +95,7 @@ public class Main {
                     listaNome += "Doce - ";
                     System.out.println("Doces adicionado.");
                     System.out.println("O valor unitário é: R$ "+precoDoce);
+                    System.out.println("O valor total é: R$ "+precoLista);
                     break;
                 case 20:
                     exit = true;
@@ -112,5 +117,7 @@ public class Main {
         System.out.println(qtdDoce+"x - Doce -> R$"+precoDoce);
             
         scanner.close();
+        //valor unitário e total do item e o total da comanda
+
     }
 }

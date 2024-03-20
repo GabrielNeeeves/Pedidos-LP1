@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         
-        /*Faça um programa que receba os produtos lançados em uma comanda de acordo com o menu: 
+        /*
+        Faça um programa que receba os produtos lançados em uma comanda de acordo com o menu: 
         * 1 - Almoço Self-Service - R$25
         * 2 - Prato Feito - R$20
         * 3 - Bebida Lata - R$8

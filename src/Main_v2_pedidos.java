@@ -140,22 +140,4 @@ public class Main_v2_pedidos {
         //valor unitário e total do item e o total da comanda
         
     }
-
-    // private static void ordenarProdutos(String[] produtos, double[] valorUnitario) {
-    //     for (int i = 0; i < valorUnitario.length - 1; i++) {
-    //         for (int j = 0; j < valorUnitario.length - 1 - i; j++) {
-    //             if (valorUnitario[j] > valorUnitario[j + 1]) {
-    //                 // Troca de elementos de valorUnitario
-    //                 double tempValor = valorUnitario[j];
-    //                 valorUnitario[j] = valorUnitario[j + 1];
-    //                 valorUnitario[j + 1] = tempValor;
-
-    //                 // Troca de elementos de produtos
-    //                 String tempProduto = produtos[j];
-    //                 produtos[j] = produtos[j + 1];
-    //                 produtos[j + 1] = tempProduto;
-    //             }
-    //         }
-    //     }
-    // }
 }

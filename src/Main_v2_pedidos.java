@@ -130,10 +130,22 @@ public class Main_v2_pedidos {
         System.out.println("Menor Gasto: "+menorGasto);
 
         //MOSTRAR EM OREM CRESCENTE
-        Arrays.sort(produtos);
-        for (String produtoTeste : produtos) {
+        Arrays.sort(valorUnitario);
+        for (double produtoTeste : valorUnitario) {
             System.out.println(produtoTeste);
         }
+
+//         for (int i = 0; i < valorUnitario.length - 1; i++) {
+//             double indiceMenor = i;
+//             for (double j = i + 1; j < valorUnitario.length; j++) {
+//                 if (valorUnitario[j] < valorUnitario[j]) {
+//                     indiceMenor = j;
+//                 }
+//             }
+//             double temp = valorUnitario[indiceMenor];
+//             valorUnitario[0] = valorUnitario[i];
+//             valorUnitario[i] = temp;
+//         }
         
         scanner.close();
         //valor unitário e total do item e o total da comanda

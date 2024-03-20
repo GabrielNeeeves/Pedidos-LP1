@@ -113,14 +113,13 @@ public class Main_v2_pedidos {
                 menorGasto = valorUnitario[i];
             }
         }
-
         
         System.out.println("=== MENU ===");
 
         System.out.println("Valor total: R$ "+valorTotal);
         System.out.println("Os itens adicionados são: ");
 
-        // QUANTIDADE e PRODUTOS
+        // QUANTIDADE e PRODUTOS e VALOR UNITÁRIO
         for(int i = 0; i < 5; i++) {
             System.out.println(vendas[i]+" - "+produtos[i]+" R$ "+valorUnitario[i]);
         }
@@ -131,24 +130,32 @@ public class Main_v2_pedidos {
 
         //MOSTRAR EM OREM CRESCENTE
         Arrays.sort(valorUnitario);
-        for (double produtoTeste : valorUnitario) {
-            System.out.println(produtoTeste);
+        
+        System.out.println("Os valores em ordem crescente são:");
+        for(int i = 0; i < 5; i++) {
+            System.out.println(produtos[i]+" - R$ "+valorUnitario[i]);
         }
-
-//         for (int i = 0; i < valorUnitario.length - 1; i++) {
-//             double indiceMenor = i;
-//             for (double j = i + 1; j < valorUnitario.length; j++) {
-//                 if (valorUnitario[j] < valorUnitario[j]) {
-//                     indiceMenor = j;
-//                 }
-//             }
-//             double temp = valorUnitario[indiceMenor];
-//             valorUnitario[0] = valorUnitario[i];
-//             valorUnitario[i] = temp;
-//         }
         
         scanner.close();
         //valor unitário e total do item e o total da comanda
         
     }
+
+    // private static void ordenarProdutos(String[] produtos, double[] valorUnitario) {
+    //     for (int i = 0; i < valorUnitario.length - 1; i++) {
+    //         for (int j = 0; j < valorUnitario.length - 1 - i; j++) {
+    //             if (valorUnitario[j] > valorUnitario[j + 1]) {
+    //                 // Troca de elementos de valorUnitario
+    //                 double tempValor = valorUnitario[j];
+    //                 valorUnitario[j] = valorUnitario[j + 1];
+    //                 valorUnitario[j + 1] = tempValor;
+
+    //                 // Troca de elementos de produtos
+    //                 String tempProduto = produtos[j];
+    //                 produtos[j] = produtos[j + 1];
+    //                 produtos[j + 1] = tempProduto;
+    //             }
+    //         }
+    //     }
+    // }
 }

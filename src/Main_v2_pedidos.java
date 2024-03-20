@@ -109,7 +109,7 @@ public class Main_v2_pedidos {
         // DEFINE O MENOR GASTO
         double menorGasto = valorUnitario[0];
         for(int i = 0; i < valorUnitario.length; i++) {
-            if(valorUnitario[i] < menorGasto) {
+            if(valorUnitario[i] < menorGasto && valorUnitario[i] != 0) {
                 menorGasto = valorUnitario[i];
             }
         }
@@ -129,6 +129,12 @@ public class Main_v2_pedidos {
         System.out.println("Maior Gasto: "+maiorGasto);
         System.out.println("Menor Gasto: "+menorGasto);
 
+        //MOSTRAR EM OREM CRESCENTE
+        Arrays.sort(produtos);
+        for (String produtoTeste : produtos) {
+            System.out.println(produtoTeste);
+        }
+        
         scanner.close();
         //valor unitário e total do item e o total da comanda
         
